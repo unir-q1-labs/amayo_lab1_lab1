@@ -1,6 +1,40 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_BAD62A66-B816-46A0-A23A-2253BBB99B5D" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_CAC655BF-8B31-477C-90A0-04B13BE6BBF2" name="Traffic Violation" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_BAD62A66-B816-46A0-A23A-2253BBB99B5D">
   <dmn:extensionElements/>
+  <dmn:itemDefinition id="_5DDC9B3C-D559-4911-B8A0-7912D442F13D" name="tDriver" isCollection="false">
+    <dmn:itemComponent id="_5745FDF3-F9F2-49E7-88C8-5080C24CDEFF" name="Points" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_AB748EE0-8C52-4CB1-B456-0028D9FC772D" name="City" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_1EC27A83-854D-4697-A345-D81665280A2A" name="State" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_ABD67FAD-D78D-4EDD-BE01-3E282BB99A12" name="Name" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_225B0E9E-37AB-4A6A-9D67-2D687C7DD7FE" name="Age" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="_91DE5F0C-8878-45AE-9FB9-4F3A6EF4DF49" name="tViolation" isCollection="false">
+    <dmn:itemComponent id="_E7933AFD-AF88-4F5D-BEA0-9E81BDC5E1EE" name="Actual Speed" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_3C1AB22B-CABB-4511-826A-5660B3F0E25E" name="Speed Limit" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_B83B6823-D756-4E28-B1E7-E2A51D3F2EF5" name="Type" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_18C879D7-83E4-4F2D-902D-C5901317B5C4" name="Date" isCollection="false">
+      <dmn:typeRef>date</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_C6E26207-DB12-476F-9D53-3DE06FF60794" name="Code" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
   <dmn:inputData id="_21240B20-13E0-417C-B641-355B762DB7C5" name="Violation">
     <dmn:extensionElements/>
     <dmn:variable id="_A7BE75C6-F6A9-499B-BD22-0CE4F1CEB521" name="Violation"/>
